@@ -3,5 +3,5 @@
 
 // We start by retrieving a random choice for the computer
 function getComputerChoice() {
-    return Math.floor(Math.random() * 3)
+    return Math.floor(Math.random() * 3);
 }
