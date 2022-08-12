@@ -10,3 +10,22 @@ function getComputerChoice() {
 function getUserChoice() {
     return prompt("Rock(0), Paper(1), or Scissors(2)?");
 }
+
+// Decide winner
+function winner(computerChoice, userChoice) {
+    if (computerChoice === 0 & userChoice === 1) {
+        return "User"
+    } else if (computerChoice === 0 & userChoice === 2) {
+        return "Computer"
+    } else if (computerChoice === 1 & userChoice === 2) {
+        return "User"
+    } else if (computerChoice === 1 & userChoice === 0) {
+        return "Computer"
+    } else if (computerChoice === 2 & userChoice === 0) {
+        return "User"
+    } else if (computerChoice === 2 & userChoice === 1) {
+        return "Computer"
+    } else {
+        return "Tie"
+    }
+}
