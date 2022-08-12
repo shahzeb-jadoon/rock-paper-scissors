@@ -5,3 +5,8 @@
 function getComputerChoice() {
     return Math.floor(Math.random() * 3);
 }
+
+// Get input from user
+function getUserChoice() {
+    return prompt("Rock(0), Paper(1), or Scissors(2)?");
+}
