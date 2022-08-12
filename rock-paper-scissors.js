@@ -8,6 +8,7 @@ function getComputerChoice() {
 
 // Get input from user
 function getUserChoice() {
+    // Make input case-insensitive
     userChoice = (prompt("Rock(0), Paper(1), or Scissors(2)?")).slice(0, 1).toLowerCase();
     if (userChoice === 0 | userChoice === "r") {
         return 0;
@@ -20,7 +21,7 @@ function getUserChoice() {
         return "No Response";
     } else {
         alert("Invalid Response!");
-        return "Invalid Response"
+        return "Invalid Response";
     }
 }
 
