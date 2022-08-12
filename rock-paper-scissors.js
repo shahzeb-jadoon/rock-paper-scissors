@@ -8,7 +8,16 @@ function getComputerChoice() {
 
 // Get input from user
 function getUserChoice() {
-    return prompt("Rock(0), Paper(1), or Scissors(2)?");
+    userChoice = (toString(prompt("Rock(0), Paper(1), or Scissors(2)?"))).slice(0, 1).toLowerCase();
+    if (userChoice === 0 | userChoice === "r") {
+        return 0;
+    } else if (userChoice === 1 | userChoice === "p") {
+        return 1;
+    } else if (userChoice === 2 | userChoice === "s") {
+        return 2;
+    } else if (userChoice === "") {
+        return "No response"
+    }
 }
 
 // Decide winner
