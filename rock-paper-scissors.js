@@ -14,18 +14,18 @@ function getUserChoice() {
 // Decide winner
 function winner(computerChoice, userChoice) {
     if (computerChoice === 0 & userChoice === 1) {
-        return "User"
+        return "User";
     } else if (computerChoice === 0 & userChoice === 2) {
-        return "Computer"
+        return "Computer";
     } else if (computerChoice === 1 & userChoice === 2) {
-        return "User"
+        return "User";
     } else if (computerChoice === 1 & userChoice === 0) {
-        return "Computer"
+        return "Computer";
     } else if (computerChoice === 2 & userChoice === 0) {
-        return "User"
+        return "User";
     } else if (computerChoice === 2 & userChoice === 1) {
-        return "Computer"
+        return "Computer";
     } else {
-        return "Tie"
+        return "Tie";
     }
 }
